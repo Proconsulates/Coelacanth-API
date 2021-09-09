@@ -1,0 +1,25 @@
+body {
+    background: rgb(0, 89, 255);
+    /*height: 100%; */
+    /*background-position: center;*/
+    /*background-repeat: no-repeat;*/
+    /*background-size: cover;*/
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+li {
+    width: max-content;
+    text-align: center;
+}
+
+ul {
+    display: flex;
+    flex-direction: column;  
+    align-items: flex-start;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: max-content;
+    max-width: 800px;
+}
