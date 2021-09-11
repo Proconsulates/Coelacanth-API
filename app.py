@@ -1,6 +1,7 @@
 import flask
-from flask import render_template, request, request, jsonify
+from flask import request, request, jsonify
 import json
+import random
 
 app = flask.Flask(__name__)
 app.config["DEBUG"] = True
@@ -16,6 +17,10 @@ def home():
 @app.route('/api/v1/resources/facts/all', methods=['GET'])
 def api_all():
     return jsonify(facts)
+
+@app.route('/api/v1/resources/facts/random', methods=['GET'])
+def myRandom():
+    return jsonify(random.choice(facts))
 
 @app.route('/api/v1/resources/facts', methods=['GET'])
 def api_id():

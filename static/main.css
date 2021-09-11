@@ -1,11 +1,10 @@
 body {
-    background: rgb(0, 89, 255);
-    /*height: 100%; */
-    /*background-position: center;*/
-    /*background-repeat: no-repeat;*/
-    /*background-size: cover;*/
+    background: linear-gradient(rgba(0, 89, 255, 0.8) 0%, rgb(0, 62, 177) 60%, rgb(1, 25, 68) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
     text-align: center;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100vh;
 }
 
 li {
@@ -22,4 +21,12 @@ ul {
     transform: translateX(-50%);
     width: max-content;
     max-width: 800px;
+}
+
+a {
+    color: rgb(71, 190, 236);
+}
+
+a:visited {
+    color: rgb(3, 151, 209);
 }
